@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https:unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="js.js">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js" ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" ></script>
+    <title>NETFLIX</title>
+</head>
+<body>
+        <header>
+            <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav class="inicio">
+                <a href="#">inicio</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentários</a>
+            </nav>
+        </div>
+        </header>
+        <main>
+            <div class="filmeprincipal">
+                <div class="container">
+                    <h3 class="titulo">Peaky Blinders</h3>
+                </div>
+                <div>
+                    <p class="descriçao">Os Peaky Blinders eram uma gangue de jovens criminosos de Birmingham,<br> Inglaterra, que ficou ativa do final do século 19 ao início do século 20.</p>
+                </div>
+                <div class="botoes">
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="botao">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+    
+            </div>
+        </main>
+        <h2>os melhores filmes</h2>
+        <div class="swiper">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="mini1.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini2.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini3.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini4.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini5.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini6.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini7.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini8.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini9.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini10.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini11.jpg" alt="Move"></div>
+                <div class="swiper-slide"><img src="mini12.jpg" alt="Move"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>-
+        </div>
+    </div>
+    </div>
+    <script>
+        var swiper = new Swiper('.swiper-container',{
+            slidesPerView: 6,
+            spaceBetween: 40,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination:{
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation:{
+                nextE1: '.swiper-button-next',
+                prevE1: '.swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+</html>
